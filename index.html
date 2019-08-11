@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>index</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button>SWITCH</button>
+    <script type="text/javascript">
+        var color = ["#22f3e","#f368e0","#ee5253","#0abde3","#10ac84","#222f3e"];
+        var i = 0;
+
+        document.querySelector("button").addEventListener("click",
+            function()
+            {
+                i = i < color.length ? ++i : 0;
+                document.querySelector("body").style.background = color[i]        
+            }
+        )
+    </script>
+</body>
+</html>
